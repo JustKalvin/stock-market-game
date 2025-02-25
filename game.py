@@ -12,7 +12,7 @@ def get_base64(image_path):
     return base64.b64encode(img_file.read()).decode()
 
 # Ganti path ke gambar kamu
-image_base64 = get_base64("./stonk_wp_for_game.jpg")
+image_base64 = get_base64("assets/stonk_wp_for_game.jpg")
 
 # Masukin ke CSS
 page_bg_color = f"""
@@ -29,7 +29,7 @@ page_bg_color = f"""
 st.markdown(page_bg_color, unsafe_allow_html=True)
 
 
-sidebar_base64 = get_base64('./peakpx.jpg')
+sidebar_base64 = get_base64('assets/peakpx.jpg')
 
 sidebar_bg_image = f"""
 <style>
